@@ -1,12 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+.flex-container-1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;           
+
+    text-align: center;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+}
+.flex-item-1{
+    flex-grow: 1;
+}
+h1{
+    font-size: 28px;
+    font-family: 'Homemade Apple';
+
+}
+h2{
+    font-size: 24px;
+    font-family: 'Pangolin'
+}
+.flexPhoto {
+    width: 100%;
+}
+body section div p{
+    font-size: 16px;
+    font-family: 'Baloo 2';
+}
+button{
+    font-size: 20px;
+    font-family: 'Pangolin' ;
+    background-color: #95bddc;
+    border: 3px solid #95bddc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    font-size: 20px;
+    font-family: 'Pangolin' ;
+    color: #5e6464;
+    background-color: #fbc6d0;
+    border: 3px solid #fbc6d0;
+    padding: 5px 10px;
+    }
+a button:hover{
+    font-size: 20px;
+    font-family: 'Pangolin' ;
+    color: #5e6464;
+    background-color: #fbc6d0;
+    border: 3px solid #fbc6d0;
+    padding: 5px 10px;
+
+}
+a button{
+    font-size: 20px;
+    font-family: 'Pangolin' ;
+    background-color: #95bddc;
+    border: 3px solid #95bddc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    }
+
+    ul{
+   list-style-type: none;
+   justify-items: end;
+   align-items: center;
+   align-content: flex-end;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #95bddc;
+    font-size: 24px;
+    font-family: 'Pangolin';
+}
+nav ul li a:hover{
+    color: #fbc6d0;
+    text-decoration: underline;
+}
+ul li{
+    display: inline-block;
+}
+nav{
+    margin-left: 350px;
+}
+p{
+    font-family: 'Baloo 2';
+}
+
+.flex-container-2{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+.flex-container-3{
+    display: flex;
+    flex-direction: row;
+}
+.flex-item-2{
+    display: flex;
+    text-align: center;
+    height: 60vh;
+    background-color: #c2d1e5;
+    padding: 20px;
+    margin: 0px 0px 0px 5px;
+    flex-direction: column;
+    width: 30%;
+    align-content: center;
+    }
+
+    footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #c2d1e5;
+ }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Baloo 2';
+    font-size: 20px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer p{
+    font-family: 'Homemade Apple';
+    font-size: 24px;
+    font-weight: bold;
+}
+@media (max-width: 630px){
+            .flex-container-1{
+                text-align: center;
+                flex-direction: column;
+            }
+            .flex-container-2{
+                text-align: center;
+                flex-direction: column;
+                width: 100%;
+            }
+            .flex-container-3{
+                text-align: center;
+                justify-items: flex-end;
+                flex-direction: column;
+                width: 100%;
+               
+            }
+            .flex-item-2 {
+                width: 100%;
+                padding-top: 25px;
+            
+            }
+            .flex-item-1{
+                margin-top: 0px;
+                padding: 0px;
+            }
+            footer{
+                display: none
+            }}
+
+
+    </style>
 </head>
 <body>
+    <section class="flex-container-1">
+     <div>
+        <img src="https://www.nea.org/sites/default/files/legacy/2020/04/new_teacher.jpeg"
+         alt="a teacher" class="flexPhoto">
+     </div>
+     <div class="flex-item-1">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://aboutme.com">about</a> 
+                </li>
+                <li>
+                    <a href="https://workwithme.com">work with me</a>
+                </li>
+            </ul>
+        </nav> 
+        <h1>English teacher with international experience</h1>
+        <h2>It's time you start speaking with confidence!</h2>
+        <p>I can teach you English without pain and spending countless hours on grammar exercises.
+            Imagine if you could speak in front of a group without stress and finally watch original
+            movies without having to look at subtitles! It is possible! Want to learn more? 
+        </p>
+        <a class="link-button-a" href="#link-to-section"><button class="link-button">Learn more!
+           </button></a>
+     </div>
+    </section>
+    <section class="flex-container-2" id="link-to-section">
+        <div class="flex-item-2">
+            <p>I have international experience with teaching. I always take the cultural 
+                background of my students into account.
+            </p>
+            <button>my experience</button>
+            <img src="https://ak.picdn.net/shutterstock/videos/17847304/thumb/11.jpg" 
+                alt="earth" height="269px">
+        </div>
+        <div class="flex-item-2">
+            <p>Read the recommendations from happy students all over the world!
+            </p>
+            <button>read my recommendations</button>
+            <img src="https://www.jtownchamber.com/wp-content/uploads/2018/08/customer-reviews2.jpg" 
+                alt="rating scale">
+        </div>
+        <div class="flex-item-2">
+            <p>Excited to start learning with me? I am happy to welcome you on my course!</p>
+                <a href="contact-page.html">
+                    <button>
+                    Learn with me
+                </button>
+                </a>
+            <img src="https://justcreative.com/wp-content/uploads/2018/03/Graphic-Designer.jpg" 
+                alt="graphic about learning" height="269px">
+        </div>
+    </section>
+    <section>
+        <footer>
+            <p>Check my social media accounts! <br> </p>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://facebook.com">Facebook</a>
+          </footer>
+    </section>
+    
     
 </body>
 </html>
